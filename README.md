@@ -7,11 +7,12 @@ single given file. Further the bsmc archive command backups all given
 filenames and directories using a predefined archive job.
 
 Sample Calls:
-
+```
 bsmc restore filename
 bsmc incr
 bsmc query sched
 bsmc archive /etc/vimrc /etc/bash.bashrc /etc/profile.d/ 
+```
 
 You need a config file
 /etc/bareos/bsmc.conf
@@ -21,7 +22,7 @@ basic information about the client itself like fd name and jobs that
 are associated with this client.
 
 Sample bsmc.conf:
----
+```
 [director]
 server=laptop.fqhn
 name=laptop-dir
@@ -36,7 +37,7 @@ archivejob=archive
 # Used as includefile by the archivejob and will be temporarily created
 # and filled by 'bsmc archive' calls
 archivefilelist=/tmp/bsmc.archive
----
+```
 
 Sample configuration for an archive job to be in included in your bareos-dir.conf is here:
 doc/archivejob.conf
