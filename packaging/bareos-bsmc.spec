@@ -39,7 +39,7 @@ rsync -av etc/.  %{buildroot}/etc/.
 %files
 %defattr(-,root,root,-)
 %doc README.md
-%config(noreplace) %attr(644,root,root) /etc/bareos/*
+%config(noreplace) %attr(644,root,root) /etc/bareos/bsmc.conf
 %config(noreplace) %attr(644,root,root) /etc/bareos/bareos-dir.d/*
 /bin/*
 
